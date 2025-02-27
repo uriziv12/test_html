@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Iframe Content</title>
+</head>
+<body>
+    <h1>My Page</h1>
+    <iframe id="myIframe" src="https://github.com/uriziv12/test_html/blob/main/1.html" width="800" height="600"></iframe>
+    <button onclick="printIframe()">Print Iframe</button>
+
+    <script>
+        function printIframe() {
+            const iframe = document.getElementById('myIframe');
+            iframe.contentWindow.focus(); // Focus the iframe's window
+            iframe.contentWindow.print();
+        }
+    </script>
+</body>
+</html>

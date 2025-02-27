@@ -11,37 +11,38 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            /* Light background for overall page */
         }
 
         .grid-container {
             display: grid;
             grid-template-columns: 21cm;
-            /* רוחב A4 */
-            grid-template-rows: repeat(3, 29.7cm);
-            /* גובה A4 ועוד שורה לגלישה */
-            gap: 2px;
-            /* שוליים של 2 ס"מ מסביב */
+            /* A4 width */
+            grid-template-rows: auto;
+            /* Adjust rows to content */
+            gap: 20px;
+            /* Space between pages */
             justify-content: center;
-            /* מרכוז אופקי */
+            /* Center horizontally */
+            padding: 20px 0;
+            /* Add padding around grid */
         }
 
         .page {
-
             background-color: white;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             /* Subtle shadow */
-            width: 21cm;
+            max-width: 800px;
             /* Set a maximum width */
-            margin: 20px auto;
+            margin: 0 auto;
             /* Center the page */
             border: 1px solid #ccc;
             /* Add a border */
             border-radius: 5px;
             /* Add rounded corners */
             box-sizing: border-box;
-            overflow: hidden;
-            /* מניעת גלישה של תוכן */
         }
 
         h1,
@@ -56,7 +57,7 @@
         }
 
         .step {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -110,10 +111,6 @@
                 </div>
             </div>
 
-        </div>
-
-        <div class="page">
-
             <div class="step">
                 <h3>5. פישוט אגף ימין</h3>
                 <p>נפשט את אגף ימין על ידי מציאת מכנה משותף ואיחוד השברים:</p>
@@ -152,18 +149,6 @@
             </div>
             <p>נוסחה זו נותנת את שני הפתרונות האפשריים (השורשים) של המשוואה הריבועית.</p>
         </div>
-
-        <div class="page">
-
-            <div class="step">
-                <h3>5. פישוט אגף ימין</h3>
-                <p>נפשט את אגף ימין על ידי מציאת מכנה משותף ואיחוד השברים:</p>
-                <div class="equation">
-                    (x + b/2a)² = (b² - 4ac) / 4a²
-                </div>
-            </div>
-        </div>
-
     </div>
 
 </body>

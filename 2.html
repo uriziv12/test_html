@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>הוכחת נוסחת השורשים</title>
+    <script>
+        MathJax = {
+            tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+            svg: {font: 'STIX-Web'}
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+    <style>
+        body {
+            font-family: sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Example background color */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column layout */
+            justify-content: center; /* Center the page */
+            align-items: start; /* Align items to the top */
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+
+        .page {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            max-width: 800px; /* Set a maximum width */
+            margin: 20px auto; /* Center the page */
+            border: 1px solid #ccc; /* Add a border */
+            border-radius: 5px; /* Add rounded corners */
+        }
+
+        .equation {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .step {
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3 {
+            text-align: center; /* Center headings */
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="page">
+        <h1>הוכחת נוסחת השורשים לפתרון משוואה ריבועית</h1>
+
+        <h2>המשוואה הריבועית הכללית</h2>
+        <div class="equation">
+            $$ax^2 + bx + c = 0$$
+        </div>
+        <p>כאשר a, b ו-c הם קבועים ו-a ≠ 0. <strong>מדוע a חייב להיות שונה מאפס?</strong> אם a היה שווה לאפס, המשוואה לא הייתה ריבועית אלא קווית.</p>
+
+        <div class="step">
+            <h3>1. חילוק ב-a</h3>
+            <p>נחלק את שני אגפי המשוואה ב-a:</p>
+            <div class="equation">
+                $$x^2 + \frac{b}{a}x + \frac{c}{a} = 0$$
+            </div>
+            <p><strong>חשוב:</strong> פעולה זו מותרת משום ש-a ≠ 0.</p>
+        </div>
+
+        <div class="step">
+            <h3>2. העברת c/a לאגף ימין</h3>
+            <p>נעביר את c/a לאגף ימין:</p>
+            <div class="equation">
+                $$x^2 + \frac{b}{a}x = -\frac{c}{a}$$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>3. השלמה לריבוע</h3>
+            <p>נוסיף $$(\frac{b}{2a})^2$$ לשני האגפים כדי להשלים לריבוע:</p>
+            <div class="equation">
+                $$x^2 + \frac{b}{a}x + (\frac{b}{2a})^2 = -\frac{c}{a} + (\frac{b}{2a})^2$$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>4. פישוט</h3>
+            <p>נפשט את שני האגפים:</p>
+            <div class="equation">
+                $$(x + \frac{b}{2a})^2 = \frac{b^2 - 4ac}{4a^2}$$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>5. הוצאת שורש</h3>
+            <p>נוציא שורש משני האגפים:</p>
+            <div class="equation">
+                $$x + \frac{b}{2a} = \pm\sqrt{\frac{b^2 - 4ac}{4a^2}}$$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>6. פישוט השורש</h3>
+            <p>נפשט את השורש:</p>
+            <div class="equation">
+                $$x + \frac{b}{2a} = \pm\frac{\sqrt{b^2 - 4ac}}{2a}$$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>7. בידוד x</h3>
+            <p>נבודד את x:</p>
+            <div class="equation">
+                $$x = -\frac{b}{2a} \pm \frac{\sqrt{b^2 - 4ac}}{2a}$$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>8. איחוד שברים</h3>
+            <p>נאחד את שני השברים:</p>
+            <div class="equation">
+                $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+            </div>
+        </div>
+
+        <h2>נוסחת השורשים</h2>
+        <div class="equation">
+            $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+        </div>
+        <p>נוסחה זו נותנת את שני הפתרונות האפשריים (השורשים) של המשוואה הריבועית.</p>
+    </div>
+</div>
+
+</body>
+</html>

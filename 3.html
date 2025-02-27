@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Iframe Content</title>
+    <style>
+        @media print {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* Ensure full viewport height */
+                margin: 0; /* Remove default body margins */
+            }
+            #myIframe {
+              width: 100%; /* or whatever width you need */
+              height: 100%; /* or whatever height you need */
+              border: none; /* remove border*/
+            }
+            #printButton {
+              display: none; /* Hide the button when printing */
+            }
+            h1{
+                display: none;
+            }
+        }
+        #printButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Page</h1>
+    <iframe id="myIframe" src="1.html" width="1000" height="800"></iframe>
+    <button id="printButton" onclick="printIframe()">Print Iframe</button>
+
+    <script>
+        function printIframe() {
+            const iframe = document.getElementById('myIframe');
+            if (iframe && iframe.contentWindow) {
+                iframe.contentWindow.focus();
+                iframe.contentWindow.print();
+            } else {
+                console.error("Iframe not found or contentWindow is not available.");
+            }
+        }
+    </script>
+</body>
+</html>
