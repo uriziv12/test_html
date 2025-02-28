@@ -1,0 +1,445 @@
+:root {
+  --px: 1px;
+  --button-width: 50px;
+  --space-between-buttons: 8px;
+  --buton-border-radius: 12px;
+}
+
+.heb_font_01 {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 499;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+}
+
+body {
+}
+
+.dark-mode {
+  background-color: #DDDDDD;
+}
+
+.dark-mode2 {
+  background-color: pink;
+}
+
+a    {
+  font-size: 24px;
+}
+
+table, th, td, tr {
+  border: 1px solid black;
+}
+
+
+table.table1_out {
+  border: 5px solid #DCDCDC;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.table1_out td {
+  padding: 0px;
+}
+
+table.table1 {
+  border: none;
+  border-collapse: collapse;
+  padding: 0px;
+}
+
+.table1 tr {
+  border: none;
+  /*border-collapse: collapse;*/
+  /*padding: 0px;*/
+}
+
+.table1 td {
+  /*border-collapse: collapse;*/
+  padding: 0px;
+}
+
+table.table1 {
+  height: 100%;
+  width: 100%;
+}
+
+.table1 td {
+  border: 1px solid black;
+}
+
+
+.table1 .table1 td {
+  border: 1px solid black;
+}
+
+/*
+.table1 .table1 td .table1 td {
+  border: 3px solid black;
+}
+
+.table1 .table1 td .table1 td .table1 td {
+  border: 3px solid black;
+}
+
+.table1 .table1 td .table1 td .table1 td .table1 td {
+  border: 3px solid black;
+}
+*/
+
+
+/*
+.table1 tr:hover > td:nth-child(1) {
+  background-color: green;
+}
+
+.table1 td:hover > tr:nth-child(1) {
+  background-color: pink;
+}
+
+.table1:hover .table1{
+  background-color: green;
+}
+
+.table1 tr tr:hover {
+  background-color: yellow;
+}
+*/
+
+
+td.eol {
+  border: 1px solid black;
+  background-color: black;
+}
+
+.table1 div {
+  /*width: 250px;*/
+  max-width: 30vw;
+  padding: 6px;
+}
+
+.line_number {
+  color: aqua;
+  background-color: rgb(131, 84, 175);
+}
+
+/*
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+*/
+
+/*
+.active, .collapsible:hover {
+  background-color: #555;
+}
+*/
+
+/*
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+*/
+
+/*
+.active:after {
+  content: "\2212";
+}
+*/
+
+/*
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+*/
+
+/*
+li.dropdown ul {
+  display : none;
+}
+*/
+
+/* Main style part for the menu and items look and feel */
+/*
+.container .cssState {
+    display:block;
+    border-top-style: solid;
+    border-top-width:1px;
+    border-top-color:black;
+    border-bottom-width:1px;
+    border-bottom-color:grey;
+    border-bottom-style:solid;
+    border-right-style:solid;
+    border-right-color:white;
+    cursor: pointer;
+    font-weight: bold;
+}
+*/
+
+div.index1 {
+  text-align: center
+}
+
+ul {
+  list-style-type: none;
+  padding-right: 24px;
+}
+
+.base_div {
+
+}
+
+li.title_line {
+  border: 1px solid blue;
+  background-color: #bbf2ac;
+  margin: 10px 0px 10px 0px;
+}
+
+a.title_line {
+  color: blue;
+  font-weight: bold;
+  /*line-height: 40px;*/
+  /*margin: 0px 0px 0px 0px;*/
+  /*padding: 10px 0px 10px 0px;*/
+}
+
+li.text_line {
+  margin: 10px 0px 10px 0px;
+}
+
+a.text_line {
+  border: 1px solid blue;
+  /*border-style: none solid none none;*/
+  background-color: #f2eeac;
+  /*line-height: 20px;*/
+  /*margin: 0px 0px 0px 0px;*/
+  /*padding: 10px 0px 10px 0px;*/
+}
+
+/*
+div.ul_container {
+  background-color: orange;
+  border-right-style:solid;
+  border-right-color:purple;
+  border-bottom-style:solid;
+  border-bottom-color:purple;
+}
+*/
+
+/*
+div.div_li {
+  display: block;
+  color: blue;
+  text-align: right;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+}
+*/
+
+/*
+div.div_li:hover {
+  background-color: yellow;
+}
+*/
+
+div.blue_class {
+  background-color: blue;
+}
+
+li div.blue_class:hover {
+  background-color: pink;
+}
+
+div.red_class {
+  background-color: red;
+}
+
+.test_class {
+
+}
+
+.red_bg {
+  background-color: red;
+}
+
+.green_bg {
+  background-color: green;
+}
+
+.hide_class {
+  display : none;
+}
+
+.toggle-button {
+    background-color: #EEEEEE;
+    font-weight: bold;
+    border: 1px solid blue;
+    font-size: 24px;
+    /*width: 40px;*/
+
+    /*
+    height: 20px;
+    border-radius: 50%;
+    margin:3px;
+    */
+
+}
+
+.empty-button {
+    background-color: #FFFFFF;
+    font-weight: bold;
+    border: 1px solid #EEEEEE;
+    font-size: 24px;
+    /*width: 40px;*/
+    /*
+    border-radius: 50%;
+    margin:3px;
+    */
+}
+
+/*
+.toggle-button:hover {
+    cursor: pointer;
+    background-color: #F89900;
+}
+*/
+
+.bar-container {
+  /*TBD*/
+  /*margin-top: 50px;*/
+}
+
+.hide-bar-button {
+  position: fixed;
+  width: calc( var(--space-between-buttons) + var(--button-width) +
+               var(--space-between-buttons) + var(--button-width) +
+               var(--space-between-buttons) + 2 * var(--px) );
+  height: 100%;
+  text-align: center;
+  /*top: 0;*/
+  /*right: 0;*/
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 0, 0, 0);
+  /* background-color: rgba(150, 255, 255, 255); */
+  color: #fff;
+  cursor: pointer;
+}
+
+.bg-button2 {
+  position: fixed;
+  width: var(--button-width);
+  aspect-ratio: 1;
+  text-align: center;
+  top: var(--space-between-buttons);
+  left: var(--space-between-buttons);
+  border-radius: var(--buton-border-radius);
+  border: 2px solid purple;
+  background-color: white;
+  cursor: pointer;
+}
+
+.inc-text-button {
+  position: fixed;
+  width: var(--button-width);
+  aspect-ratio: 1;
+  text-align: center;
+  top: var(--space-between-buttons);
+  left: calc( var(--space-between-buttons) + var(--button-width) + var(--space-between-buttons) );
+  border-radius: var(--buton-border-radius);
+  border: 2px solid purple;
+  background-color: white;
+  cursor: pointer;
+}
+
+.dec-text-button {
+  position: fixed;
+  width: var(--button-width);
+  aspect-ratio: 1;
+  text-align: center;
+  top: calc( var(--space-between-buttons) + var(--button-width) + var(--space-between-buttons) );
+  left: var(--space-between-buttons);
+  border-radius: var(--buton-border-radius);
+  border: 2px solid purple;
+  background-color: white;
+  cursor: pointer;
+}
+
+.inc-padding-button {
+  position: fixed;
+  width: var(--button-width);
+  aspect-ratio: 1;
+  text-align: center;
+  top: calc( var(--space-between-buttons) + var(--button-width) + var(--space-between-buttons) );
+  left: calc( var(--space-between-buttons) + var(--button-width) + var(--space-between-buttons) );
+  border-radius: var(--buton-border-radius);
+  border: 2px solid purple;
+  background-color: white;
+  cursor: pointer;
+}
+
+.dec-padding-button {
+  position: fixed;
+  width: var(--button-width);
+  aspect-ratio: 1;
+  text-align: center;
+  top: calc( var(--space-between-buttons) + var(--button-width) +
+             var(--space-between-buttons) + var(--button-width) +
+             var(--space-between-buttons) );
+  left: var(--space-between-buttons);
+  border-radius: var(--buton-border-radius);
+  border: 2px solid purple;
+  background-color: white;
+  cursor: pointer;
+}
+
+.hide-btns-button {
+  position: fixed;
+  width: var(--button-width);
+  aspect-ratio: 1;
+  text-align: center;
+  top: calc( var(--space-between-buttons) + var(--button-width) +
+             var(--space-between-buttons) + var(--button-width) +
+             var(--space-between-buttons) );
+  left: calc( var(--space-between-buttons) + var(--button-width) + var(--space-between-buttons) );
+  border-radius: var(--buton-border-radius);
+  border: 2px solid purple;
+  background-color: white;
+  cursor: pointer;
+}
+
+.hide-txt-lns-button {
+  position: fixed;
+  width: var(--button-width);
+  aspect-ratio: 1;
+  text-align: center;
+  top: calc( var(--space-between-buttons) + var(--button-width) +
+             var(--space-between-buttons) + var(--button-width) +
+             var(--space-between-buttons) + var(--button-width) +
+             var(--space-between-buttons) );
+  left: var(--space-between-buttons);
+  border-radius: var(--buton-border-radius);
+  border: 2px solid purple;
+  background-color: white;
+  cursor: pointer;
+}

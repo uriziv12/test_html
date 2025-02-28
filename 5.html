@@ -1,156 +1,76 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>הוכחת נוסחת השורשים</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            direction: rtl;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            /* Light background for overall page */
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: 21cm;
-            /* A4 width */
-            grid-template-rows: auto;
-            /* Adjust rows to content */
-            gap: 20px;
-            /* Space between pages */
-            justify-content: center;
-            /* Center horizontally */
-            padding: 20px 0;
-            /* Add padding around grid */
-        }
-
-        .page {
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            /* Subtle shadow */
-            max-width: 800px;
-            /* Set a maximum width */
-            margin: 0 auto;
-            /* Center the page */
-            border: 1px solid #ccc;
-            /* Add a border */
-            border-radius: 5px;
-            /* Add rounded corners */
-            box-sizing: border-box;
-        }
-
-        h1,
-        h2 {
-            text-align: center;
-        }
-
-        .equation {
-            font-size: 1.2em;
-            margin: 10px 0;
-            text-align: center;
-        }
-
-        .step {
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Print Iframe Content</title>
 </head>
+<style>
+    @media print {
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Ensure full viewport height */
+            margin: 0;
+            /* Remove default body margins */
+        }
+
+        #myIframe {
+        }
+
+        #printButton {
+            display: none;
+            /* Hide the button when printing */
+        }
+
+        h1 {
+            display: none;
+        }
+    }
+
+    #printButton {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .page {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow */
+        width: 21cm;
+        height: 29.7cm;
+        /* Set a maximum width */
+        margin: 20px auto;
+        /* Center the page */
+        border: 1px solid #ccc;
+        /* Add a border */
+        border-radius: 5px;
+        /* Add rounded corners */
+        /* box-sizing: border-box; */
+        overflow: hidden;
+        /* מניעת גלישה של תוכן */
+    }
+</style>
 
 <body>
+    <h1>My Page</h1>
 
-    <div class="grid-container">
-        <div class="page">
-            <h1>הוכחת נוסחת השורשים לפתרון משוואה ריבועית</h1>
-
-            <h2>המשוואה הריבועית הכללית</h2>
-            <div class="equation">
-                ax² + bx + c = 0
-            </div>
-            <p>כאשר a, b ו-c הם קבועים ו-a ≠ 0.</p>
-
-            <h2>מטרה</h2>
-            <p>המטרה היא למצוא את ערכי x המקיימים את המשוואה, כלומר את שורשי המשוואה.</p>
-
-            <h2>פתרון</h2>
-
-            <div class="step">
-                <h3>1. חילוק ב-a</h3>
-                <p>נחלק את שני אגפי המשוואה ב-a:</p>
-                <div class="equation">
-                    x² + (b/a)x + (c/a) = 0
-                </div>
-            </div>
-
-            <div class="step">
-                <h3>2. העברת c/a לאגף ימין</h3>
-                <p>נעביר את האיבר c/a לאגף ימין:</p>
-                <div class="equation">
-                    x² + (b/a)x = -c/a
-                </div>
-            </div>
-
-            <div class="step">
-                <h3>3. השלמה לריבוע</h3>
-                <p>נוסיף וגם נפחית את (b/2a)² לשני האגפים:</p>
-                <div class="equation">
-                    x² + (b/a)x + (b/2a)² = -c/a + (b/2a)²
-                </div>
-            </div>
-
-            <div class="step">
-                <h3>4. פישוט אגף שמאל</h3>
-                <p>אגף שמאל הוא כעת ריבוע מושלם:</p>
-                <div class="equation">
-                    (x + b/2a)² = -c/a + (b/2a)²
-                </div>
-            </div>
-
-            <div class="step">
-                <h3>5. פישוט אגף ימין</h3>
-                <p>נפשט את אגף ימין על ידי מציאת מכנה משותף ואיחוד השברים:</p>
-                <div class="equation">
-                    (x + b/2a)² = (b² - 4ac) / 4a²
-                </div>
-            </div>
-
-            <div class="step">
-                <h3>6. הוצאת שורש ריבועי</h3>
-                <p>נוציא שורש ריבועי משני האגפים (זכרו שיש שני שורשים אפשריים):</p>
-                <div class="equation">
-                    x + b/2a = ±√(b² - 4ac) / 2a
-                </div>
-            </div>
-
-            <div class="step">
-                <h3>7. בידוד x</h3>
-                <p>נבודד את x על ידי העברת b/2a לאגף ימין:</p>
-                <div class="equation">
-                    x = -b/2a ± √(b² - 4ac) / 2a
-                </div>
-            </div>
-
-            <div class="step">
-                <h3>8. איחוד שברים</h3>
-                <p>נאחד את שני השברים:</p>
-                <div class="equation">
-                    x = (-b ± √(b² - 4ac)) / 2a
-                </div>
-            </div>
-
-            <h2>נוסחת השורשים</h2>
-            <div class="equation">
-                x = (-b ± √(b² - 4ac)) / 2a
-            </div>
-            <p>נוסחה זו נותנת את שני הפתרונות האפשריים (השורשים) של המשוואה הריבועית.</p>
-        </div>
+    <div class="page">
+        <iframe id="myIframe" src="./matal/babakama_68_1__7_1_14.html" scrolling="no"  width="800" height="1100"></iframe>
     </div>
 
+    <button onclick="printIframe()">Print Iframe</button>
+
+    <script>
+        function printIframe() {
+            const iframe = document.getElementById('myIframe');
+            iframe.contentWindow.focus(); // Focus the iframe's window
+            iframe.contentWindow.print();
+        }
+    </script>
 </body>
 
 </html>
